@@ -1,53 +1,138 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#f8fafc;
+}
+
+header{
+    text-align:center;
+    padding:70px 20px;
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+}
+
+header h1{
+    font-size:3em;
+    margin-bottom:10px;
+}
+
+header p{
+    opacity:.9;
+}
+
+main{
+    max-width:900px;
+    margin:40px auto;
+    padding:20px;
+}
+
+.card{
+    background:#1e293b;
+    border-radius:15px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+h2{
+    color:#60a5fa;
+    margin-bottom:15px;
+}
+
+.projects{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.project{
+    flex:1;
+    min-width:180px;
+    background:#334155;
+    padding:18px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.project:hover{
+    transform:translateY(-5px);
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#94a3b8;
+}
+</style>
 </head>
+
 <body>
 
-    <header>
-        <h1>Bienvenue</h1>
-        <p>Petit portfolio personnel.</p>
-        <hr>
-    </header>
+<header>
+    <h1>👋 Bonjour</h1>
+    <p>Bienvenue sur mon mini portfolio.</p>
+</header>
 
-    <main>
-        <section>
-            <h2>À propos</h2>
-            <p>
-                Passionné par le développement et les nouvelles technologies.
-                J'aime créer des projets web et apprendre de nouvelles choses.
-            </p>
-        </section>
+<main>
 
-        <section>
-            <h2>Projets</h2>
-            <ul>
-                <li>🌐 Site vitrine</li>
-                <li>💻 Application web</li>
-                <li>⚙️ Outils personnels</li>
-            </ul>
-        </section>
+<div class="card">
+    <h2>À propos</h2>
+    <p>
+        Je m'intéresse au développement web, aux nouvelles technologies et
+        à la création de projets modernes. Ce site est une simple page de présentation.
+    </p>
+</div>
 
-        <section>
-            <h2>Compétences</h2>
-            <p>HTML • CSS • JavaScript • Git</p>
-        </section>
+<div class="card">
+    <h2>Mes projets</h2>
 
-        <section>
-            <h2>Contact</h2>
-            <p>Email : contact@example.com</p>
-            <p>GitHub : github.com/votreprofil</p>
-        </section>
-    </main>
+    <div class="projects">
+        <div class="project">
+            <h3>🌐 Site Web</h3>
+            <p>Création de sites modernes et responsives.</p>
+        </div>
 
-    <hr>
+        <div class="project">
+            <h3>💻 Application</h3>
+            <p>Développement d'outils et d'interfaces web.</p>
+        </div>
 
-    <footer>
-        <p>&copy; 2026 - Mon Portfolio</p>
-    </footer>
+        <div class="project">
+            <h3>⚙️ Expériences</h3>
+            <p>Tests, apprentissage et projets personnels.</p>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <h2>Compétences</h2>
+    <p>HTML • CSS • JavaScript • Git • GitHub</p>
+</div>
+
+<div class="card">
+    <h2>Contact</h2>
+    <p>📧 contact@example.com</p>
+    <p>🐙 github.com/votreprofil</p>
+</div>
+
+</main>
+
+<footer>
+    © 2026 • Mini Portfolio
+</footer>
 
 </body>
 </html>
